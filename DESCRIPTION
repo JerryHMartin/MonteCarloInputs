@@ -1,11 +1,14 @@
 Package: MonteCarloInputs
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Prepare Inputs for Monte Carlo Simulation (Monte Carlo Input Generator)
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Jerry Martin
+Maintainer: Jerry Martin <jerry.h.martin@usda.gov>
+Description: This code accepts a dataframe of base values and a matching 
+    dataframe of deviations to generate inputs needed for a Monte Carlo 
+    simulation. This code is useful if another software is processing the 
+    inputs. 
+License: Creative Commons Zero License
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.1.1
