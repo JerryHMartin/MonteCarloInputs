@@ -86,10 +86,10 @@ Generate_Monte_Carlo_Inputs <- function(base_values,
       dv = unname(unlist(deviations[i]))
       
       if(distribution  == "normal") {
-        retVec <- bv + stats::rnorm(1) * dv
+        retVec <- bv + stats::rnorm(length(bv)) * dv
       }
       if(distribution  == "uniform") {
-        retVec <- bv + (stats::runif(1) * 2 - 1) * dv
+        retVec <- bv + (stats::runif(length(bv)) * 2 - 1) * dv
       }
       
       retVal[[i]] <- retVec
